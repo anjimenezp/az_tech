@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/az_tech/static/css/main.7a4cf193.chunk.css",
+    "main.js": "/az_tech/static/js/main.1274ae19.chunk.js",
+    "main.js.map": "/az_tech/static/js/main.1274ae19.chunk.js.map",
+    "runtime~main.js": "/az_tech/static/js/runtime~main.daac6564.js",
+    "runtime~main.js.map": "/az_tech/static/js/runtime~main.daac6564.js.map",
+    "static/js/2.947340af.chunk.js": "/az_tech/static/js/2.947340af.chunk.js",
+    "static/js/2.947340af.chunk.js.map": "/az_tech/static/js/2.947340af.chunk.js.map",
+    "index.html": "/az_tech/index.html",
+    "precache-manifest.a555f0e7ae43471154a2711526ec8f5b.js": "/az_tech/precache-manifest.a555f0e7ae43471154a2711526ec8f5b.js",
+    "service-worker.js": "/az_tech/service-worker.js",
+    "static/css/main.7a4cf193.chunk.css.map": "/az_tech/static/css/main.7a4cf193.chunk.css.map"
+  }
+}
