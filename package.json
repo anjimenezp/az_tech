@@ -2,7 +2,7 @@
   "name": "az-technologies-landing-page",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://anjimenezp.github.io/az_tech",
+  "homepage": "/",
   "dependencies": {
     "gh-pages": "^6.3.0",
     "react": "^18.0.0",
