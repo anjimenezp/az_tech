@@ -1,6 +1,6 @@
-# AZ Technologies Landing Page
+# AZ Tech
 
-A modern, responsive landing page for AZ Technologies, focused on streamlining user engagement and contact options.
+Software solutions for your business.
 
 ## Features
 
