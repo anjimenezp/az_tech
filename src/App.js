@@ -154,18 +154,66 @@ function App() {
       <section id="projects" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Projects</h2>
-          <div className="grid md:grid-cols-3 gap-10">
-            {[1,2,3].map(i => (
-              <div key={i} className="bg-gray-50 rounded-2xl p-8 shadow border border-gray-200 flex flex-col items-center text-center">
-                <div className="mb-6 text-5xl text-gray-400">[Feature {i} Icon]</div>
-                <h3 className="font-semibold mb-3 text-xl text-gray-900">[Feature {i} Title]</h3>
-                <p className="text-gray-600">[Feature {i} Description]</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* MentorIA Project */}
+            <a 
+              href="https://mentoria-edu.streamlit.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative bg-white rounded-2xl shadow-lg border-2 border-transparent hover:border-blue-200 flex flex-col items-center text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden cursor-pointer h-full"
+              aria-label="View MentorIA Project"
+            >
+              {/* Project banner with overlay for better text contrast */}
+              <div className="relative w-full h-24 overflow-hidden">
+                <img 
+                  src="/images/mentoria-banner.png" 
+                  alt="MentorIA Platform" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent"></div>
               </div>
-            ))}
+              
+              {/* Removed click indicator banner for better legibility */}
+              
+              {/* Decorative gradient border effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Animated pulse effect */}
+              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(99,102,241,0.05)_70%,transparent_71%)] animate-[pulse_3s_ease-in-out_infinite]"></div>
+              </div>
+              
+              <div className="relative z-10 w-full flex flex-col h-full px-4 pb-4">
+                <div className="flex flex-col items-center text-center mb-4">
+                  <h3 className="text-gray-800 font-bold text-xl mb-2">MentorIA</h3>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-medium bg-blue-50 text-blue-700 border border-blue-100 group-hover:bg-blue-100 transition-colors duration-300">
+                    Live Demo
+                  </span>
+                </div>
+                
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-4 px-1">
+                  AI-driven platform helping teachers and students close learning gaps through personalized, adaptive learning experiences powered by artificial intelligence.
+                </p>
+              </div>
+              
+              {/* Subtle corner accent */}
+              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-indigo-100 rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+            </a>
+            
+            {/* Placeholder Project 2 */}
+            <div className="group relative bg-gray-50/50 rounded-2xl p-8 border-2 border-dashed border-gray-200 flex flex-col items-center justify-center text-center hover:border-blue-200 transition-all duration-500 cursor-pointer">
+              <div className="relative">
+                <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-4 mx-auto group-hover:bg-blue-50 transition-colors duration-300">
+                  <span className="text-3xl text-gray-300 group-hover:text-blue-300 transition-colors duration-300">+</span>
+                </div>
+                <p className="text-gray-400 group-hover:text-gray-500 transition-colors duration-300">More projects coming soon</p>
+                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-blue-100 pointer-events-none transition-all duration-500"></div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
           </div>
         </div>
       </section>
-
 
       {/* Testimonials */}
       <section id="testimonials" className="py-20 bg-white border-t border-gray-100">

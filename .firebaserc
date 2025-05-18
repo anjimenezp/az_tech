@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "az-project-1ee3c"
-  }
+    "default": "aztechnologies",
+    "production": "aztechnologies"
+  },
+  "targets": {},
+  "etags": {}
 }
