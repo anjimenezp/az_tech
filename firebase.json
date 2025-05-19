@@ -5,6 +5,15 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "scripts": {
+      "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
+    }
   }
 }

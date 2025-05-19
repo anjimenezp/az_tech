@@ -24,3 +24,8 @@ Software solutions for your business.
 git clone [https://github.com/anjimenezp/az_tech.git](https://github.com/anjimenezp/az_tech.git)
 cd az_tech
 npm install
+
+### Run
+
+```bash
+npm start

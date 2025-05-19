@@ -54,7 +54,7 @@ function App() {
           {/* Logo and nav tabs as a single group */}
           <div className="flex space-x-6 md:space-x-10">
             <a href="#home" className="flex items-center mr-6"> 
-              <img src="/images/az_logo.jpg" alt="AZ Technologies Logo" className="h-8 w-auto" style={{maxWidth: '40px'}} />
+              <img src="/images/logos/az_logo.jpg" alt="AZ Technologies Logo" className="h-8 w-auto" style={{maxWidth: '40px'}} />
             </a>
             <a href="#projects" className="text-gray-700 font-light text-base md:text-lg px-2 py-1 hover:underline hover:underline-offset-4 transition">Projects</a>
             <a href="#cta" className="text-gray-700 font-light text-base md:text-lg px-2 py-1 hover:underline hover:underline-offset-4 transition">Contact</a>
@@ -200,6 +200,51 @@ function App() {
               <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-indigo-100 rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
             </a>
             
+            {/* EV Charging Stations Project */}
+            <a 
+              href="https://apinerosm.wixsite.com/website-149" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative bg-white rounded-2xl shadow-lg border-2 border-transparent hover:border-blue-200 flex flex-col items-center text-center hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden cursor-pointer h-full"
+              aria-label="View EV Charging Stations Project"
+            >
+              {/* Project banner with overlay for better text contrast */}
+              <div className="relative w-full h-24 overflow-hidden">
+                <img 
+                  src="/images/ev-banner.png" 
+                  alt="EV Charging Stations Platform" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent"></div>
+              </div>
+              
+              {/* Removed click indicator banner for better legibility */}
+              
+              {/* Decorative gradient border effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Animated pulse effect */}
+              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(99,102,241,0.05)_70%,transparent_71%)] animate-[pulse_3s_ease-in-out_infinite]"></div>
+              </div>
+              
+              <div className="relative z-10 w-full flex flex-col h-full px-4 pb-4">
+                <div className="flex flex-col items-center text-center mb-4">
+                  <h3 className="text-gray-800 font-bold text-xl mb-2">EV Charging Stations</h3>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-medium bg-blue-50 text-blue-700 border border-blue-100 group-hover:bg-blue-100 transition-colors duration-300">
+                    Live Demo
+                  </span>
+                </div>
+                
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-4 px-1">
+                  Electric Mobility Charging Infrastructure at UNAL, led by CEO Andrés Felipe Jiménez Pérez and a multidisciplinary engineering team.
+                </p>
+              </div>
+              
+              {/* Subtle corner accent */}
+              <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-indigo-100 rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+            </a>
+
             {/* Placeholder Project 2 */}
             <div className="group relative bg-gray-50/50 rounded-2xl p-8 border-2 border-dashed border-gray-200 flex flex-col items-center justify-center text-center hover:border-blue-200 transition-all duration-500 cursor-pointer">
               <div className="relative">
@@ -215,11 +260,26 @@ function App() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section id="testimonials" className="py-20 bg-white border-t border-gray-100">
+      {/* Our Founder */}
+      <section id="Founder" className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center text-gray-900">Testimonials</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center text-gray-900">Our Founder</h2>
           <div className="grid md:grid-cols-2 gap-8">
+            {/* Founder Profile */}
+            <div className="bg-white rounded-xl shadow-md border border-gray-100 p-6 h-full">
+              <div className="flex flex-col items-center text-center">
+                <img 
+                  src="/images/ProfilePhoto.jpg" 
+                  alt="Andrés Felipe Jiménez Pérez" 
+                  className="w-32 h-32 rounded-full border-4 border-blue-50 shadow-md mb-4 object-cover"
+                />
+                <h3 className="text-xl font-bold text-gray-900 mb-1"><a href="https://www.linkedin.com/in/felipejimenezperez/" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-700 hover:underline">Andrés Felipe Jiménez Pérez</a></h3>                
+                <p className="text-blue-600 text-sm font-medium mb-3">Founder & CEO</p>
+                <p className="text-gray-600 text-sm mb-4">
+                  Software Engineer passionate about technology and innovation, dedicated to creating impactful digital solutions.
+                </p>
+              </div>
+            </div>
             {/* LinkedIn Recommendation - Elizabeth */}
             <div className="bg-gray-50 rounded-xl p-8 shadow border border-gray-200 flex flex-col">
               <p className="text-lg text-gray-700 mb-4">“It is gratifying to recommend Andrés Felipe Jiménez Pérez. His dedication and exceptional skills stand out in every project. He is a committed, creative, and proactive professional. His integrity and work ethic are admirable, and I am sure he will continue to be a valuable asset to any team he works with.”</p>
@@ -254,11 +314,11 @@ function App() {
           <p className="text-lg text-gray-700 mb-8">Let’s talk about how AZ tech can help you solve your toughest challenges.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://www.linkedin.com/in/anjimenezp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg text-lg transition">
-  <img src="/images/in_logo.png" alt="LinkedIn" className="h-[1.5em] w-auto mr-2 align-top inline-block" />
-  LinkedIn
-</a>
+              <img src="/images/logos/in_logo.png" alt="LinkedIn" className="h-[1.5em] w-auto mr-2 align-top inline-block" />
+              LinkedIn
+            </a>
             <a href="https://wa.me/573214190213?text=I%20have%20a%20challenge%20with%20my%20business%2C%20I%20want%20to%20ask%20for%20a%20software%20solution" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg text-lg transition" aria-label="WhatsApp">
-              <img src="/images/wpp_icon.png" alt="WhatsApp" className="h-[1.5em] w-auto mr-2 align-top inline-block" />
+              <img src="/images/logos/wpp_logo.png" alt="WhatsApp" className="h-[1.5em] w-auto mr-2 align-top inline-block" />
               WhatsApp
             </a>
           </div>
